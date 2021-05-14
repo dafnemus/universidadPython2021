@@ -1,7 +1,4 @@
-# Operadores
-
-from os import PRIO_PGRP
-
+# Operadores Ariméticos
 
 operando_a = 3
 operando_b = 6
