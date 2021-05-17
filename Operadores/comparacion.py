@@ -1,6 +1,6 @@
 # Operadores de Comparación
 
-primer_varable = 4
+primer_variable = 4
 segunda_variable = 3
 
 # Comparación de igual/igual:
