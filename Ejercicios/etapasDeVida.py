@@ -8,11 +8,11 @@
 
 def determinar_etapa_vida(edad):
     etapa = None
-    if edad > 0 and edad <= 10:
+    if 0 <= edad <= 10:
         etapa = 'Infancia'
-    elif edad >= 11 and edad <= 20:
+    elif 11 <= edad <= 20:
         etapa = 'adolescencia'
-    elif edad >= 21 and edad <= 30:
+    elif 21 <= edad <= 30:
         etapa = 'Joven adulto'
     elif edad > 30:
         etapa = 'Adulto'
