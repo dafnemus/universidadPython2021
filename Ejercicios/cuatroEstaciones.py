@@ -12,16 +12,13 @@ def determinar_estacion_año(mes: str) -> str:
         if meses[m] == mes:
             if m <= 1 or m == 11:
                 estacion = 'VERANO'
-                print(f'Es {estacion} en el mes de {mes}')
             elif m == 2 or m <= 4:
                 estacion = 'OTOÑO'
-                print(f'Es {estacion} en el mes de {mes}')
             elif m == 5 or m <= 7:
                 estacion = 'INVIERNO'
-                print(f'Es {estacion} en el mes de {mes}')
             else:
                 estacion = 'PRIMAVERA'
-                print(f'Es {estacion} en el mes de {mes}')
+            print(f'Es {estacion} en el mes de {mes}')
 
 
 
