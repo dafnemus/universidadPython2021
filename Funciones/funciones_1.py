@@ -31,3 +31,11 @@ resultado = sumar_v_2()
 print(f'resultado de sumar: {resultado}')
 resultado = sumar_v_2(2, 8)
 print(f'resultado de sumar: {resultado}')
+
+
+# Argumentos variables
+def listar_nombres(*nombres): # * = tupla
+    for nombre in nombres:
+        print(nombre)
+
+listar_nombres('juan', 'carla', 'laila')
