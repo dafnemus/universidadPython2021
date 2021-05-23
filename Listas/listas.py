@@ -31,3 +31,34 @@ print(lista)
 # iterar una lista
 for i in lista:
     print(i)
+
+# saber la extensión de una lista
+print(len(lista))
+
+# agregar un elemento a la lista
+lista.append('Laura')
+print(lista)
+
+# insertar un elemento en un indice en especifico
+lista.insert(2, 'Martin')
+print(lista)
+
+# remover un elemento
+lista.remove('Pablo')
+print(lista)
+
+# remover el ultimo elemento de la lista
+lista.pop()
+print(lista)
+
+# eliminar segun indice
+del lista[0]
+print(lista)
+
+# limpiar todos los elementos de nuestra lista
+lista.clear()
+print(lista)
+
+# borrar la lista por completo
+del lista
+print(lista)
