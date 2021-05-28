@@ -39,3 +39,9 @@ def listar_nombres(*nombres): # * = tupla
         print(nombre)
 
 listar_nombres('juan', 'carla', 'laila')
+
+def listar_terminos(**terminos):
+    for key, value in terminos.items():
+        print(f'{key}: {value}')
+
+listar_terminos(IDE='Integrated Development Environment', PK='Primary Key')
