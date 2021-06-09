@@ -18,7 +18,9 @@ class Persona:
 
     def mostrar_detalle(self):
         return f'Persona: {self._nombre} {self._apellido}'
-
+    # destructor
+    def __del__(self):
+        print(f'Persona:{self.nombre}, fue eliminada')
 # se ejecuta cuando se cumpla la siguiente condicion. para no pisarse con otros archivos
 if __name__ == '__main__':
     persona_1 = Persona('Pablo', 'Perez', 22)
