@@ -19,24 +19,28 @@ class Persona:
     def mostrar_detalle(self):
         return f'Persona: {self._nombre} {self._apellido}'
 
-persona_1 = Persona('Pablo', 'Perez', 22)
-print(f'Persona 1 se llama {persona_1._nombre}')
+# se ejecuta cuando se cumpla la siguiente condicion. para no pisarse con otros archivos
+if __name__ == '__main__':
+    persona_1 = Persona('Pablo', 'Perez', 22)
+    print(f'Persona 1 se llama {persona_1.  _nombre}')
 
-# hay que evitar lo siguiente:
-print(persona_1._nombre)
-# recomendado:
-# 1_ usar un metodo get
-print(persona_1.get_nombre())
-# 2_ con property
-print(persona_1.apellido)
+    # hay que evitar lo siguiente:
+    print(persona_1._nombre)
+    # recomendado:
+    # 1_ usar un metodo get
+    print(persona_1.get_nombre())
+    # 2_ con property
+    print(persona_1.apellido)
 
-# setter:
-persona_1.apellido = 'Suarez'
-print('Edad setteada', persona_1.apellido)
+    # setter:
+    persona_1.apellido = 'Suarez'
+    print('Edad setteada', persona_1.   apellido)
 
 
-persona_2 = Persona('Marta', 'Gomez', 45)
-print(f'persona 2, se llama {persona_2.get_nombre()}')
+    persona_2 = Persona('Marta', 'Gomez', 45)
+    print(f'persona 2, se llama {persona_2. get_nombre()}')
 
-persona_1.mostrar_detalle()
-persona_2.mostrar_detalle()
+    persona_1.mostrar_detalle()
+    persona_2.mostrar_detalle()
+
+    print(__name__)
