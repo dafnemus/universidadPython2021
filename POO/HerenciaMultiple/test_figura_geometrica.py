@@ -14,6 +14,13 @@ print(cuadrado_2)
 print(f'El area del cuadrado 2 es: {cuadrado_2.calcular_area()}')
 print()
 
+# validaciones cuando se modifica algun atributo
+cuadrado_3 = Cuadrado(5, 'rojo')
+print(cuadrado_3)
+cuadrado_3.alto = 11
+print(cuadrado_3)
+print()
+
 # MRO - Method Resolution Order 
 # Permite conocer la jerarquía de clases
 print(f'Jerarquia de las clases dentro de la clase Cuadrado: {Cuadrado.mro()}')
@@ -30,3 +37,9 @@ print(f'Area de un rectangulo: {rectangulo_1.calcular_area()}')
 rectangulo_2 = Rectangulo(13, 24, 'violeta')
 print(rectangulo_2)
 print(f'Area de un rectangulo: {rectangulo_2.calcular_area()}')
+
+# validaciones cuando se modifica algun atributo
+rectangulo_3 = Rectangulo(1, 4, 'violeta')
+print(rectangulo_3)
+rectangulo_3.ancho = -4
+print(rectangulo_3)
