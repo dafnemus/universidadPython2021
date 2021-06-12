@@ -1,6 +1,9 @@
 from POO.HerenciaMultiple.Rectangulo import Rectangulo
 from POO.HerenciaMultiple.Cuadrado import Cuadrado
 
+# Clase abstracta:
+# figura = FiguraGeometrica()
+
 print('Creacion Cuadrados'.center(15, '-'))
 cuadrado_1 = Cuadrado(10, 'verde')
 print(cuadrado_1)
