@@ -5,7 +5,13 @@ class MiClase:
     def __init__(self, variable_de_instancia) -> None:
         self.variable_de_instancia = variable_de_instancia
 
+    @staticmethod # se asocia a la clase en si misma y no con los bojetos
+    def metodo_estatico():  # No pueden acceder a variables de instancia directamente
+        print(MiClase.variable_clase)
 
+
+# Metodo statico
+MiClase.metodo_estatico()
 
 # acceso a una variable de instancia
 mi_clase = MiClase('Variable de instancia')
