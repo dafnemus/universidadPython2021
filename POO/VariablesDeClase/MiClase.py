@@ -9,9 +9,17 @@ class MiClase:
     def metodo_estatico():  # No pueden acceder a variables de instancia directamente
         print(MiClase.variable_clase)
 
+    @classmethod
+    def metodo_clase(cls):
+        print(cls.variable_clase)
 
-# Metodo statico
+
+# Metodo statico, no recibe ninguna referencia de la clase.
 MiClase.metodo_estatico()
+
+# Metodo de clase, si puede tener acceso a la informacion de la clase.
+MiClase.metodo_clase()
+
 
 # acceso a una variable de instancia
 mi_clase = MiClase('Variable de instancia')
