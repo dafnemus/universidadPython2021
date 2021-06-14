@@ -1,0 +1,23 @@
+# Crear las siguientes clases
+
+-------- Orden:
++ contador_ordenes: int <<class variable>>
+- id_orden: int
+- productos: <<Products list>>
+------------------------------------------
++ __str__()
+                   / \
+                  // \\
+                    |
+                    |
+                    | Agregables a la lista Poductos
+                    |
+                    |
+
+------- Producto:
++ contador_productos: int <<class variable>>
+- id_producto: int
+- nombre: str
+- precio: float
+--------------------------------------------
++ __str__()
