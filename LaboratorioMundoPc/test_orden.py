@@ -24,3 +24,10 @@ lista_compus_1 = [compu_1, compu_3]
 orden_1 = Orden(lista_compus_1)
 print(f'Orden: {orden_1.id_orden}'.center(30, '-'))
 print(orden_1)
+
+lista_compus_2 = [compu_1, compu_2]
+orden_2 = Orden(lista_compus_2)
+print(orden_2)
+orden_2.agregar_compu(compu_3)
+print(f'Orden: {orden_2.id_orden}'.center(30, '-'))
+print(orden_2)
