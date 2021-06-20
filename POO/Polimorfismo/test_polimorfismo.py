@@ -4,6 +4,8 @@ from Gerente import Gerente
 def imprimir_detalles(objeto):
     print(objeto)
     print(type(objeto))
+    if isinstance(objeto, Gerente):  # si cierto obj pertenece a cierta clase
+        print(objeto.departamento)
 
 
 empleado_1 = Empleado('Juan', 30000)
