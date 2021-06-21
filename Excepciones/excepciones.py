@@ -1,5 +1,5 @@
 # Uso de try/except para manejar excepciones.
-
+from NumerosIdenticosException import NumerosIdenticosException
 resultado = None
 
 
@@ -20,6 +20,8 @@ try:
     print('DIVISION, ingrese dos numeros')
     a = int(input('Primer número: '))
     b = int(input('Segundo número: '))
+    if a == b:
+        raise NumerosIdenticosException('Números idénticos')
     resultado = a / b
 except ZeroDivisionError as zde:
     print(f'ZDE-Ocurrió el siguiente error: {zde}')
