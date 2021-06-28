@@ -6,15 +6,25 @@ database='base de datos')
 
 print(conexion)
 
+'''
 # creacion de un cursor
-cursor = conexion.cursor()
 
-sentencia = 'SELECT * FROM persona'
-cursor.execute(sentencia)
-# traer los registros de la db.
-registros = cursor.fetchall()
-print(registros)
 
-# cerrar la conecion a la db
+# cerrar la conexion a la db
 cursor.close()
 conexion.close()
+'''
+# conexion con with
+try:
+    with conexion:
+        with conexion.cursor() as cursor:
+            sentencia = 'SELECT * FROM persona'
+            cursor.execute(sentencia)
+            # traer los registros de la db.
+            registros = cursor.fetchall()
+            print(registros)
+except Exception as e:
+    print(f'Ocurrió un error: {e}')
+finally:
+    conexion.close()
+
