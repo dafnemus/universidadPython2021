@@ -16,4 +16,5 @@ registros = cursor.fetchall()
 print(registros)
 
 # cerrar la conecion a la db
-print(registros)
+cursor.close()
+conexion.close()
